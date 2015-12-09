@@ -16,11 +16,11 @@ import javax.swing.text.BadLocationException;
 public class main {
     public static String direct;
 
-    public static void main (String args[]) throws IOException {
+    public static void main(String args[]) throws IOException {
 
-        String current = new java.io.File( "." ).getCanonicalPath();
+        String current = new java.io.File(".").getCanonicalPath();
         direct = current;
-       JFrame_box();
+        JFrame_box();
 
 
     }
@@ -28,7 +28,7 @@ public class main {
 
     public static void JFrame_box() {
         System.out.println("starting form");
-        JFrame frame = new JFrame("test");
+        JFrame frame = new JFrame("Her Majesties Referencer");
         frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(700, 300);
@@ -57,7 +57,7 @@ public class main {
         // Set content panel
         JPanel content = new JPanel();
         content.setBackground(Color.decode("#FFFFFF"));
-        content.setPreferredSize(new Dimension(700, 250));
+        content.setPreferredSize(new Dimension(700, 800));
 
         //Add items to HEADER panels
 
@@ -79,6 +79,8 @@ public class main {
         frame.pack();
         frame.setVisible(true);
         frame.setResizable(false);
+
+
     }
 
     public static void JFrame_null() {
@@ -93,25 +95,49 @@ public class main {
         frame.setResizable(false);
 
 
+
         JPanel header = new JPanel();
         header.setLayout(null);
         header.setBackground(Color.decode("#2d2d2f"));
-        header.setBounds(0,0,700, 50);
+        header.setBounds(0, 0, 700, 50);
         // Set the logo image
-        //ImageIcon crown = new ImageIcon(direct + "/src/com/bookingSnake/referencer/crown.png");
-        //JLabel pn = new JLabel(crown);
-        //pn.setBounds(0,0,50,50);
+       // ImageIcon crown = new ImageIcon(direct + "/src/com/bookingSnake/referencer/crown.png");
+       // JLabel pn = new JLabel(crown);
+       // pn.setBounds(0,0,50,50);
 
         JPanel content = new JPanel();
         content.setBackground(Color.decode("#000000"));
-        content.setBounds(0,50,700, 250);
+        content.setBounds(0, 50, 700, 250);
 
-    //Add all items to Panels
+        //Add all items to Panels
         //header.add(pn);
 
-    //Add all panels to Frame
+        //Add all panels to Frame
         frame.add(header);
         frame.add(content);
 
+
+
     }
-}
+
+
+
+    public static void  west () {
+
+
+
+        JPanel west = new JPanel();
+        west.setBackground(Color.decode("#66cc66"));
+        west.setPreferredSize(new Dimension(50, 50));
+        west.add(west, BorderLayout.WEST);
+        west.setVisible(true);
+
+
+
+
+
+    }
+
+    }
+
+
