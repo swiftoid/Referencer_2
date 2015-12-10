@@ -13,6 +13,12 @@ import javax.swing.text.BadLocationException;
 /**
  * Created by swi94000733 on 01/12/2015.
  */
+
+
+
+
+
+
 public class main {
     public static String direct;
 
@@ -95,15 +101,14 @@ public class main {
         frame.setResizable(false);
 
 
-
         JPanel header = new JPanel();
         header.setLayout(null);
         header.setBackground(Color.decode("#2d2d2f"));
         header.setBounds(0, 0, 700, 50);
         // Set the logo image
-       // ImageIcon crown = new ImageIcon(direct + "/src/com/bookingSnake/referencer/crown.png");
-       // JLabel pn = new JLabel(crown);
-       // pn.setBounds(0,0,50,50);
+        // ImageIcon crown = new ImageIcon(direct + "/src/com/bookingSnake/referencer/crown.png");
+        // JLabel pn = new JLabel(crown);
+        // pn.setBounds(0,0,50,50);
 
         JPanel content = new JPanel();
         content.setBackground(Color.decode("#000000"));
@@ -116,28 +121,8 @@ public class main {
         frame.add(header);
         frame.add(content);
 
-
-
     }
+}
 
-
-
-    public static void  west () {
-
-
-
-        JPanel west = new JPanel();
-        west.setBackground(Color.decode("#66cc66"));
-        west.setPreferredSize(new Dimension(50, 50));
-        west.add(west, BorderLayout.WEST);
-        west.setVisible(true);
-
-
-
-
-
-    }
-
-    }
 
 
