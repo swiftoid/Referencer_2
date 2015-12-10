@@ -62,7 +62,7 @@ public class center_pannel extends JFrame {
         pa.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         pa.setVisible(true);
-        pa.setSize(250, 600);
+        pa.setSize(250, 360);
 
 
 
