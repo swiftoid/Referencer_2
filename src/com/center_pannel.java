@@ -11,17 +11,17 @@ import java.awt.Color;
 public class center_pannel extends JFrame {
 
 
-    private JLabel label_1;
-    private JButton button;
-    private TextField textfield_1;
-    private JLabel label_2;
-    private TextField  textfield_2;
-    private JLabel label_3;
-    private TextField textfield_3;
-    private JLabel label_4;
-    private TextField textfield_4;
-    private JLabel label_5;
-    private TextField textfield_5;
+    public JLabel label_1;
+    public JButton button;
+    public TextField textfield_1;
+    public JLabel label_2;
+    public TextField  textfield_2;
+    public JLabel label_3;
+    public TextField textfield_3;
+    public JLabel label_4;
+    public TextField textfield_4;
+    public JLabel label_5;
+    public TextField textfield_5;
     public JPanel color_1 = new JPanel();
     public JPanel color_2 =new JPanel ();
 

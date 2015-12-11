@@ -22,6 +22,7 @@ import javax.swing.text.BadLocationException;
 public class main {
     public static String direct;
 
+
     public static void main(String args[]) throws IOException {
 
         String current = new java.io.File(".").getCanonicalPath();
@@ -63,7 +64,7 @@ public class main {
         // Set content panel
         JPanel content = new JPanel();
         content.setBackground(Color.decode("#FFFFFF"));
-        content.setPreferredSize(new Dimension(700, 800));
+        content.setPreferredSize(new Dimension(400, 500));
 
         //Add items to HEADER panels
 
