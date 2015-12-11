@@ -22,15 +22,16 @@ public class center_pannel extends JFrame {
     private TextField textfield_4;
     private JLabel label_5;
     private TextField textfield_5;
-    private JPanel color_1 = new JPanel();
-    private JPanel color_2 =new JPanel ();
+    public JPanel color_1 = new JPanel();
+    public JPanel color_2 =new JPanel ();
 
 
     public center_pannel () {
 
+
+        setLayout(new FlowLayout());
         color_1.setBackground(Color.BLUE);
         add(color_1);
-        setLayout(new FlowLayout());
 
         color_2.setBackground(Color.CYAN);
         add(color_2);
@@ -65,6 +66,7 @@ public class center_pannel extends JFrame {
 
 
     public static void main(String args[]) {
+
 
 
         center_pannel pa = new center_pannel();
