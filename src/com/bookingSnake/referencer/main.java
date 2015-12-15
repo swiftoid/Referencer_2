@@ -9,6 +9,7 @@ import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 import javax.swing.text.BadLocationException;
+import javax.swing.JTextField;
 
 /**
  * Created by swi94000733 on 01/12/2015.
@@ -16,14 +17,43 @@ import javax.swing.text.BadLocationException;
 
 
 
-
-
-
 public class main {
+
     public static String direct;
 
 
+    //Left Panel
+
+    public JLabel label_1;
+    public JButton button;
+    public TextField textfield_1;
+    public JLabel label_2;
+    public TextField  textfield_2;
+    public JLabel label_3;
+    public TextField textfield_3;
+
+
+    // end left pannel //
+
+
+  // center pannel //
+
+    public JLabel Clabel_1;
+    public JButton Cbutton;
+    public TextField Ctextfield_1;
+    public JLabel Clabel_2;
+    public TextField  Ctextfield_2;
+    public JLabel Clabel_3;
+    public TextField Ctextfield_3;
+
+
+   // end centyert pannel //
+
+
     public static void main(String args[]) throws IOException {
+
+
+
 
         String current = new java.io.File(".").getCanonicalPath();
         direct = current;
@@ -80,7 +110,73 @@ public class main {
 
         //Add all panels to Frame
         frame.add(header);
+
+        //
+
+        JPanel left = new JPanel();
+
+        //Left Panel ///
+
+        left.setLayout(new BoxLayout(left, BoxLayout.Y_AXIS));
+        JLabel label_1 = new JLabel("BOOK SEARCH");
+        left.add(label_1);
+        TextField textfield_1 = new TextField(20);
+        left.add(textfield_1);
+        JLabel label_2 = new JLabel("Enter Title of Publiction");
+        left.add(label_2);
+        TextField textfield_2 = new TextField(20);
+        left.add(textfield_2);
+        JLabel label_3 = new JLabel("Enter Date of Publication");
+        left.add(label_3);
+        TextField textfield_3 = new TextField (20);
+        left.add(textfield_3);
+        JButton button = new JButton("SEARCH INTERNET");
+        left.add(button);
+        //End of Left Panel
+
+
+       JPanel center = new JPanel();
+
+        //Center Panel
+
+        center.setLayout(new BoxLayout(center,BoxLayout.Y_AXIS));
+        JLabel Clabel_1 = new JLabel("Enter Author Details");
+        center.add(Clabel_1);
+        JTextField Ctextfield_1 = new JTextField(20);
+        center.add(Ctextfield_1);
+
+        JLabel Clabel_2 = new JLabel("Enter Title of Publiction");
+        center.add(Clabel_2);
+        JTextField Ctextfield_2 = new JTextField(20);
+        center.add(Ctextfield_2);
+
+        JLabel Clabel_3 = new JLabel("Enter Date of Publication");
+        center.add(Clabel_3);
+        JTextField Ctextfield_3 = new JTextField(20);
+        center.add(Ctextfield_3);
+
+        JLabel Clabel_4 = new JLabel("Enter Publisher");
+        center.add(Clabel_4);
+        JTextField Ctextfield_4 = new JTextField(20);
+        center.add(Ctextfield_4);
+
+        JLabel Clabel_5 = new JLabel("Enter Place of Publication");
+        center.add(Clabel_5);
+        JTextField Ctextfield_5 = new JTextField(20);
+        center.add(Ctextfield_5);
+
+        JButton Cbutton = new JButton("Create reference");
+        center.add(Cbutton);
+
+
+    //End of Center Panel
+
+
+    // ADD content to frame //
+        content.add(left);
+        content.add(center);
         frame.add(content);
+
 
         // complete the form
         frame.pack();
